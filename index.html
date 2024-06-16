@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+
+    <title>Super Mario</title>
+</head>
+
+<body>
+
+    <div class="caixa-video-mario">
+        <video src="./video.mp4" autoplay muted loop> </video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+        <img src="./image/logo.png" alt="logo do super mario" class="logo-mario">
+        <p class="primeiro-paragrafo"> Encanadores <span class="span-mario">Mario</span> & <span
+                class="span-luigi">Luigi</span> - Resolvendo Seus Problemas Com Estilo!</p>
+        <p>
+            Você já se encontrou em uma situação de emergência com encanamento? Vazamentos
+            inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe,
+            porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos
+            do Reino dos Cogumelos - <span class="span-mario">Mario</span> e <span class="span-luigi"> Luigi</span>!
+        </p>
+
+        <button id="botao" onclick="clickNoBotao()">Fale Conosco 🚀</button>
+    </div>
+
+    <img src="./image/super mario.png" alt="imagem do mario e luigi" class="imagem-mario-luigi" >
+
+
+
+    <form class="fale-conosco">
+
+        <div class="primeiro-nome">
+            <h3>Fale Conosco</h3>
+        </div>
+
+        <input type="text" placeholder="Seu nome">
+        <input type="tel" placeholder="Seu telefone">
+        <textarea placeholder="Digite seu problema aqui"></textarea>
+        <!-- textarea é um input para adicionar grande quantidade de informações -->
+        <button class="botao-form" onclick="sumir()">Enviar formulário</button>
+
+    </form>
+
+
+</body>
+
+<script>
+
+    const formulario = document.querySelector(".fale-conosco")       /* primeiro mapear o elemento pra ver se é realmente é ele  */
+    console.log(formulario)
+
+
+    function clickNoBotao() {
+
+        formulario.style.left = "700px"
+        
+
+    }
+
+
+    function sumir() {
+
+        formulario.style.left = "345px"
+    }
+
+
+    
+    
+</script>
+
+</html>

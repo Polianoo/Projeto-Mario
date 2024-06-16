@@ -1,0 +1,142 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: 0;
+     font-family: "Mukta", sans-serif;
+     }
+
+
+
+ body {
+     height: 100vh;
+     display: flex;
+     /* dispaly flex coloca o elemento um do lado do outro */
+     align-items: center;
+     /*  centraliza na horizontal da tela */
+     justify-content: space-evenly;
+     /* centraliza na vertical da tela */
+
+ }
+
+
+ .logo-mario {
+     width: 300px;
+ }
+
+ .imagem-mario-luigi {
+     height: 600px;
+     transition: 1s ;
+
+ }
+
+ .caixa-principal {
+     width: 40%;
+ }
+
+ .caixa-video-mario {
+     position: fixed;
+     top: 0;
+     z-index: -1;
+     /* z-index posiciona o elemento para ficar atrâs ou na frente com valores -1 ou 1 */
+     width: 100%;
+     height: 100%;
+
+
+ }
+
+ video {
+     position: fixed;
+     top: 0;
+     min-width: 100%;
+     min-height: 100%;
+
+ }
+
+ .mascara-video {
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+ }
+
+
+
+ p {
+     color: whitesmoke;
+     margin-top: 10px;
+     font-size: 24px;
+
+ }
+
+ .span-mario {
+     color: blue;
+ }
+
+ .span-luigi {
+     color: red;
+ }
+
+ #botao {
+
+     height: 46px;
+     width: 180px;
+     background: #c51111;
+     color: white;
+     border: none;
+     margin-top: 25px;
+     cursor: pointer;
+     border-radius: 4px;
+     font-size: 18px;
+     padding-left: 8px;
+
+ }
+
+
+ #botao:hover {
+     background: blue;
+ }
+
+
+ .botao-form {
+     background: #c51111;
+     color: white;
+     border: none;
+     font-size: 15px;
+     padding: 10px;
+ }
+
+
+
+.fale-conosco{
+    background:rgb(0, 255, 21); 
+    display: flex;               /* display flex organiza os elementos um do lado do outro de uma caixa */
+    flex-direction: column;      /* flex direction direciona o elemento que fique um debaixo do outro */
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;                    /* gap distancia todos elementos dentro da caixa de uma só vez */
+    position: fixed;
+    left: -345px;
+    transition: left 1.2s linear;
+ }
+
+ input{
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;     /* border aceita três valores ( grossura, tipo de borda e cor)  */
+    padding-left: 10px;
+    outline-color: blue;         /* outline-color é a linha da borda. Quando selecionar o elemento mostrará a cor */
+
+ }
+
+ textarea{
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: blue;
+    font-family: "Rubik Glitch Pop", system-ui;
+
+
+ }
